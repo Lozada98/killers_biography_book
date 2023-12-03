@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/policiales.jpg" type="image/x-icon">
+    <title>Asesinos Seriales</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        background: rgb(236, 0, 0);
+        background: radial-gradient(circle, rgba(236, 0, 0, 1) 0%, rgba(11, 1, 1, 1) 59%);
+        margin: 0;
+    }
+    
+    .titulo h1 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        color: antiquewhite;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin: 70px 0;
+    }
+    
+    .cards img {
+        cursor: pointer;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        border: 1px solid rgba(224, 224, 226, 0.2);
+        transition: all .2s;
+        box-shadow: 12px 12px 2px 1px rgba(160, 10, 17, 0.2);
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cards img:hover {
+        opacity: 0.8;
+        transform: scale(1.01);
+    }
+    
+    .cards p {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: antiquewhite;
+    }
+    
+    .cards a {
+        text-decoration: none;
+        padding: 10px 0;
+        color: antiquewhite;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+    }
+    
+    .cards a:hover {
+        background-color: brown;
+        color: rgb(5, 5, 5);
+        box-shadow: 12px 12px 2px 1px rgb(46, 45, 45);
+    }
+    
+    button {
+        display: flex;
+        height: 3em;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        border: none;
+        background: rgb(11, 1, 1);
+        background: linear-gradient(317deg, rgba(11, 1, 1, 1) 49%, rgba(236, 0, 0, 1) 85%);
+    }
+    
+    button {
+        background: rgb(236, 0, 0);
+        background: linear-gradient(317deg, rgba(236, 0, 0, 1) 54%, rgba(11, 1, 1, 1) 62%, rgba(0, 0, 0, 1) 99%);
+    }
+    
+    button a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+    
+    summary {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: aliceblue;
+    }
+    /* Mobil */
+    
+    @media (max-width: 700px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="titulo">
+        <h1>Asesinos Seriales</h1>
+    </div>
+
+    <div class="cards">
+        <img src="img/asesinos/jack.jpg">
+        <div>
+
+            <a href="./biografias/jack/jack.html">Jack el Destripador</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Jack el Destripador es el nombre dado a un asesino en serie sin identificar al que se le atribuyen al menos cinco homicidios en el barrio londinense de Whitechapel en 1888.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/david.jpg">
+
+        <div>
+            <a href="./biografias/David_Berkowitz/David_Berkowitz.html">David Berkowitz</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    David Richard Berkowitz es un asesino en serie estadounidense, conocido como "El hijo de Sam" o "El asesino del calibre 44". Cometía sus crímenes disparando a sus víctimas con un revólver Charter Arms Bulldog, causándoles la muerte a seis de ellas.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/henry lee lucas.jpg">
+        <div>
+            <a href="./biografias/Henry_Lee_Lucas/Henry_Lee_Lucas.html">Henry Lee Lucas</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Henry Lee Lucas fue un asesino en serie estadounidense que mató a su madre en 1960, y a dos mujeres en 1983. Confesó ser el responsable de la muerte de más de 600 personas a lo largo de Florida, Luisiana, Oklahoma y Virginia Occidental.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/jeffreydahmer.jpg">
+        <div>
+            <a href="./biografias/Jeffrey_Dahmer/Jeffrey_Dahmer.html">Jeffrey Dahmer</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Jeffrey Lionel Dahmer, también conocido como el Caníbal de Milwaukee o el Monstruo de Milwaukee, fue un asesino en serie y delincuente sexual estadounidense que cometió el asesinato y desmembramiento de diecisiete hombres y adolescentes entre 1978 y 1991.​
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/John_Wayne_Gacy.jpg">
+        <div>
+            <a href="./biografias/John_Wayne_Gacy/John_Wayne_Gacy.html">John Wayne Gacy</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    John Wayne Gacy, conocido también como Pogo, el payaso o El payaso asesino, fue un asesino en serie estadounidense que violó y mató a 33 hombres jóvenes, en su mayoría menores, entre 1972 y 1978.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/richard_ramirez.jpg">
+        <div>
+            <a href="./biografias/Richard_Ramirez/Richard_Ramirez.html">Richard Ramirez</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Ricardo Leyva Muñoz Ramírez, más conocido como Richard Ramírez, también conocido por el apodo de "The Night Stalker", fue un asesino en serie estadounidense que mató a 14 personas en la ciudad de Los Ángeles entre los años 1984 y 1985 siendo capturado
+                    el 31 de agosto de 1985.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/richard_speck.jpg">
+        <div>
+            <a href="./biografias/Richard_Speck/Richard_Speck.html">Richard Speck</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Richard Speck se hizo famoso por haber secuestrado, torturado, violado y apuñalado a muerte a ocho estudiantes de enfermería del South Chicago Community Hospital en Chicago el día 14 de julio de 1966.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/ted_bundy.jpeg">
+        <div>
+            <a href="./biografias/Ted_Bundy/Ted_Bundy.html">Ted Bundy</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Theodore Robert Bundy fue un asesino en serie estadounidense. Después de más de una década negándolo, confesó 30 homicidios de mujeres estadounidenses, que cometió en siete estados, entre 1974 y 1978. El número real de víctimas es desconocido.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/zodiac-killer.jpg">
+        <div>
+            <a href="./biografias/El_asesino_del_Zodiaco/asesino_Zodiaco.html">El asesino del Zodiaco</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    El asesino del Zodiaco fue un asesino en serie que acechó el norte de California entre diciembre de 1968 y octubre de 1969. En una carta, presuntamente suya, confesó el asesinato de 37 víctimas, aunque las únicas confirmadas fueron diez hombres y tres
+                    mujeres.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/Edmund_Kemper.jpg">
+        <div>
+            <a href="./biografias/Edmund_Kemper/Edmund_Kemper.html">Edmund Kemper</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Edmund Emil Kemper III, más conocido como El padre del asesinato, es un asesino en serie estadounidense al que también se le conoce como El asesino de las colegialas, que estuvo activo en la década de 1970.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/Ridgway_Gary.jpg">
+        <div>
+            <a href="./biografias/Gary_Ridgway/Gary_Ridgway.html">Gary Leon Ridgway</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Gary Leon Ridgway, conocido como The Green River Killer, es un asesino en serie estadounidense al cual se le encontró culpable de asesinar a 49 mujeres. Lo que lo convierte en el segundo asesino serial más prolífico de la historia de los Estados Unidos.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/HaroldShipman.jpg">
+        <div>
+            <a href="./biografias/Harold_Shipman/Harold_Shipman.html">Harold Frederick Shipman</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Harold Frederick Shipman fue un médico británico, acusado de matar a más de 200 de sus pacientes, corroborado solamente en 15 de ellos en primera instancia y más tarde elevado a 218. Es conocido por ser uno de los peores asesinos en serie de la historia.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/Dennis.jpg">
+        <div>
+            <a href="./biografias/Dennis/dennis.html">Dennis Lynn Rader</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Dennis Lynn Rader es un asesino en serie estadounidense, convicto por los asesinatos de diez personas en Wichita, condado de Sedgwick, Kansas, entre 1974 y 1991. Sus alias más conocidos eran Asesino BTK o Mago BTK, letras correspondientes a Bind, Torture
+                    and Kill, que describían su modus operandi.
+                </p>
+            </details>
+        </div>
+        <img src="img/asesinos/jerry.jpg">
+        <div>
+            <a href="./biografias/Brudos/brudos.html">Jerry Brudos</a>
+            <details>
+                <summary>Resumen</summary>
+                <p>
+                    Jerome Henry «Jerry» Brudos fue un asesino en serie estadounidense y necrófilo, también conocido en inglés como The Lust Killer y The Shoe Fetish Slayer, que asesinó al menos a cuatro mujeres en Oregón en 1968 y 1969.
+                </p>
+            </details>
+        </div>
+
+
+        </section>
+
+        <button>
+            <a href="index.html" > Home</a>
+        </button>
+
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>
